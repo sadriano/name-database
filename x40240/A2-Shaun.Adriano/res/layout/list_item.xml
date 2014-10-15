@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="UnknownIdInLayout,UselessParent,HardcodedText" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/comma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lastname_text"
+                android:text=", " />
+
+            <TextView
+                android:id="@+id/colon_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/fullname_label"
+                android:text="@string/colon"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/colon_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastname_text"
+                android:layout_toRightOf="@+id/gender_label"
+                android:text="@string/colon"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/colon_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender_label"
+                android:layout_toRightOf="@+id/favmeal_label"
+                android:text="@string/colon"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gender_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/gender_text"
+                android:layout_alignBottom="@+id/gender_text"
+                android:layout_alignParentLeft="true"
+                android:text="@string/gender"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fullname_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/gender_label"
+                android:layout_alignParentLeft="true"
+                android:text="@string/fullname"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/favmeal_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender_label"
+                android:layout_alignParentLeft="true"
+                android:text="@string/favmeal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lastname_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/colon_1"
+                android:paddingLeft="5dp"
+                android:text="Peacock" />
+            
+            <TextView
+                android:id="@+id/firstname_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/gender_text"
+                android:layout_toRightOf="@+id/comma"
+                android:text="Jeffrey" />
+
+            <TextView
+                android:id="@+id/gender_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastname_text"
+                android:layout_toRightOf="@+id/colon_2"
+                android:paddingLeft="5dp"
+                android:text="@string/male" />
+
+            <TextView
+                android:id="@+id/favmeal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender_text"
+                android:layout_toRightOf="@+id/colon_3"
+                android:paddingLeft="5dp"
+                android:text="Breakfast" />
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
